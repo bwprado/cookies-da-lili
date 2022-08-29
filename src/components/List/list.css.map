@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,wJAAI;ADGT,AAAD,gBAAY,CAAC;EACX,OAAO,EAAE,IAAI;EACb,MAAM,ECKD,GAAG,CAAC,KAAK,CAAC,OAAO;EDJtB,aAAa,ECED,IAAI;EDDhB,gBAAgB,EAAE,KAAK;EACvB,WAAW,EAAE,CAAC;EACd,QAAQ,EAAE,KAAK;CAAG",
+    "sources": [
+        "list.sass",
+        "../../css/variables.sass"
+    ],
+    "names": [],
+    "file": "list.css"
+}

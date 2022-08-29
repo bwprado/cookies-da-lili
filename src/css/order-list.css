@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+.list {
+  box-sizing: border-box;
+  grid-row: order-list;
+  align-self: start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  border: 1px solid #dadada;
+}
+
+.list__status {
+  z-index: 0;
+  width: 5px;
+  height: 100%;
+}
+
+.status-ready {
+  background-color: #00fd2a;
+}
+
+.status-order {
+  background-color: #fd0000;
+}
+
+.status-production {
+  background-color: #0076fd;
+}
+
+.status-delivered {
+  background-color: #c4c4c4;
+}
+
+.list__main {
+  padding-left: 10px;
+  position: relative;
+  display: grid;
+  grid-template-columns: [num] 30px [date] minmax(80px, 120px) [costumer] minmax(120px, 200px) [description] minmax(150px, 300px) [delivery] minmax(80px, 100px) [actions] minmax(80px, 100px);
+  column-gap: 10px;
+  height: 50px;
+  border-bottom: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+}
+
+.list__main::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  clip-path: inset(0 calc(100% - 5px) 0 0);
+}
+
+.list__main:last-child::after {
+  height: calc(100% + 1px);
+  border-radius: 0 0 0 10px;
+}
+
+.list__main:hover {
+  background-color: rgba(243, 135, 169, 0.1);
+  cursor: pointer;
+}
+
+.list__main > div {
+  margin-right: 20px;
+}
+
+.list__item {
+  font-size: 16px;
+}
+
+.status {
+  grid-column: status;
+}
+
+.num {
+  grid-column: num;
+  align-self: center;
+  color: #6a0085;
+}
+
+.date {
+  grid-column: date;
+  align-self: center;
+}
+
+.costumer {
+  grid-column: costumer;
+  align-self: center;
+  font-weight: 700;
+}
+
+.description {
+  grid-column: description;
+  align-self: center;
+}
+
+.delivery {
+  grid-column: delivery;
+  align-self: center;
+}
+
+.actions {
+  grid-column: actions;
+  align-self: center;
+}
+/*# sourceMappingURL=order-list.css.map */

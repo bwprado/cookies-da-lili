@@ -1,0 +1,64 @@
+@import '../../css/variables'
+
+$grid: [qtd] 30px [product] 1fr [size] 30px [price] 40px [btn] 20px
+
+.products
+  &__container
+    display: grid
+    grid-template-rows: [header] max-content [list] 1fr
+    grid-column: 2
+    grid-row: 2 / 5
+  &__header
+    margin: 0
+    padding: 0
+    padding-left: 10px
+    padding-right: 10px
+    display: grid
+    grid-template-columns: $grid
+    column-gap: 20px
+    grid-row: header
+    list-style-type: none
+    &__text
+      font-size: 12px
+      font-weight: 700
+      padding-bottom: 12px
+  &__list
+    scrollbar-width: none
+    position: relative
+    height: 260px
+    max-height: 260px
+    scroll-behavior: smooth
+    overflow-y: scroll
+    display: flex
+    flex-direction: column
+    border: $border
+    background-color: white
+    border-radius: $border-radius
+    margin: 0
+    -ms-overflow-style: none
+    &::-webkit-scrollbar
+      display: none
+    &__item
+      font-size: 14px
+      font-weight: 500
+      justify-self: start
+      align-items: center
+      margin: 0
+      padding: 0
+      padding-left: 10px
+      padding-right: 10px
+      grid-row: [list]
+      display: grid
+      grid-template-columns: $grid
+      column-gap: 20px
+      list-style: none
+      min-height: 30px
+      cursor: pointer
+      &:hover
+        background-color: $hover-color
+        &:first-child
+          border-radius: $border-radius $border-radius 0 0
+        &:last-child
+          border-radius: 0 0 $border-radius $border-radius
+    &__remove:hover
+      color: $selected-color

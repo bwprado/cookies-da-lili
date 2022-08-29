@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+button {
+  background-color: white;
+  border-color: #f0f0f0;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+  background-color: white;
+  min-width: 150px;
+  max-width: 200px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #c5c5c5;
+  cursor: pointer;
+}
+
+.dropdown__selected {
+  color: #3d3d3d;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.dropdown__list, .dropdown__list--active, .dropdown__list--inactive {
+  min-width: 150px;
+  max-width: 200px;
+  position: absolute;
+  background-color: white;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  left: 0;
+  top: 35px;
+  z-index: 1;
+}
+
+.dropdown__list--active {
+  display: -ms-grid;
+  display: grid;
+}
+
+.dropdown__list--inactive {
+  display: none;
+}
+
+.dropdown__item {
+  font-weight: 700;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  padding-left: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #f0f0f0;
+}
+
+.dropdown__item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown__item:first-child {
+  border-radius: 6px 6px 0 0;
+}
+
+.dropdown__item:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
+.dropdown__btn {
+  width: 2.5em;
+  background-color: #f0f0f0;
+  border-radius: 0 6px 6px 0;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+.dropdown__btn-arrow {
+  pointer-events: none;
+}
+
+.dropdown__btn-arrow--open {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.dropdown__btn-arrow--close {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+/*# sourceMappingURL=dropdown.css.map */

@@ -1,0 +1,31 @@
+@import '../../css/variables'
+
+.tabs
+  border-radius: $border-radius
+  padding: 20px
+  &__header
+    height: 30px
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    gap: 30px
+    border-bottom: $border
+    margin-bottom: 40px
+  &__btn
+    cursor: pointer
+    &--active
+      font-weight: 700
+      border-bottom: 3px solid $selected-color
+    &:hover
+      font-weight: 700
+      color: $selected-color
+
+.content
+  display: flex
+  flex-direction: row
+  gap: 20px
+  &__child
+    width: 100%
+    display: none
+    &--active
+      display: block

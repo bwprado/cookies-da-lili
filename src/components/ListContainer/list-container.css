@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+.list__container {
+  box-sizing: border-box;
+  grid-row: order-list;
+  align-self: start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  border: 1px solid #dadada;
+}
+
+.list__container__header {
+  padding-left: 10px;
+  display: grid;
+  column-gap: 10px;
+  background-color: #f3f2f7;
+  border-radius: 10px 10px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.list__container__header__text:hover {
+  cursor: pointer;
+  color: #f387a9;
+}
+
+.list__container__header__status {
+  z-index: 0;
+  width: 5px;
+  height: 100%;
+}
+
+.list__item__text, .list__item__text--nothing {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: center;
+  font-size: 1em;
+  height: 20px;
+}
+
+.list__item__text--nothing {
+  margin: 20px;
+}
+
+.list__item__container {
+  padding-left: 10px;
+  position: relative;
+  column-gap: 10px;
+  height: 50px;
+  border-bottom: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+}
+
+.list__item__container:last-child .list__item__status {
+  height: calc(100% + 1px);
+  border-radius: 0 0 0 10px;
+}
+
+.list__item__container:hover {
+  background-color: rgba(243, 135, 169, 0.1);
+  cursor: pointer;
+}
+
+.list__item__status {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #dddddd;
+  clip-path: inset(0 calc(100% - 5px) 0 0);
+}
+
+.none {
+  background-color: #dddddd;
+}
+
+.red {
+  background-color: #ff475f;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.blue {
+  background-color: #469cff;
+}
+
+.list__main > div {
+  margin-right: 20px;
+}
+
+.num {
+  justify-self: center;
+  grid-column: num;
+}
+
+.name {
+  font-weight: 700;
+  grid-column: name;
+}
+
+.cellphone {
+  grid-column: cell;
+}
+
+.address {
+  grid-column: address;
+}
+
+.total {
+  grid-column: total;
+}
+/*# sourceMappingURL=list-container.css.map */

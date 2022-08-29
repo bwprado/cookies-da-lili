@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+.modal__main {
+  margin: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.452);
+  height: 100%;
+  width: 100%;
+  border: 1px solid #dadada;
+  z-index: 11;
+}
+
+.modal__content {
+  padding: 40px;
+  column-gap: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 50%) 50%;
+  min-width: 0;
+  width: 80%;
+  background-color: #f3f2f7;
+  border-radius: 10px;
+}
+
+.content__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  align-self: flex-end;
+  font-size: 14px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.content__btn {
+  margin-top: 20px;
+  height: 40px;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  color: white;
+  background-color: #f387a9;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.content__btn:hover {
+  background-color: #fff;
+  color: #f387a9;
+}
+
+.time {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  grid-column: 1;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.time__date-picker, .time .time__time-picker {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #dadada;
+}
+
+.content__input {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #dadada;
+}
+
+.content__label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.product-options {
+  box-sizing: border-box;
+  justify-content: flex-start;
+  gap: 20px;
+  grid-column: 1;
+}
+
+.input__container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  min-height: 30px;
+  min-width: 30px;
+  margin-bottom: 10px;
+}
+
+.col1 {
+  grid-column: 1;
+}
+
+.wrapper {
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.select {
+  min-width: 250px;
+}
+
+.min {
+  min-width: 50%;
+}
+
+textarea {
+  min-height: 80px;
+  vertical-align: top;
+}
+/*# sourceMappingURL=add-costumer.css.map */

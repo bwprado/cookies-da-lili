@@ -1,0 +1,130 @@
+@import variables
+
+.modal
+  &__main
+    margin: 0
+    position: fixed
+    background-color: rgba(0, 0, 0, 0.452)
+    height: 100%
+    width: 100%
+    border: $border
+    z-index: 11
+  &__content
+    padding: 40px
+    column-gap: 20px
+    box-sizing: border-box
+    position: absolute
+    top: 0
+    right: 0
+    display: grid
+    grid-template-columns: minmax(0, 50%) 50%
+    min-width: 0
+    width: 80%
+    background-color: $header-bg-color
+    border-radius: $border-radius
+
+.content
+  &__close
+    position: absolute
+    top: 10px
+    right: 10px
+    height: 20px
+    width: 20px
+    align-self: flex-end
+    font-size: 14px
+    border-radius: 50%
+    border: none
+    cursor: pointer
+  &__btn
+    margin-top: 20px
+    height: $el-height
+    border: $border
+    border-radius: $border-radius
+    color: white
+    background-color: $selected-color
+    cursor: pointer
+    font-size: 16px
+    font-weight: 700
+    &:hover
+      background-color: #fff
+      color: $selected-color
+
+
+.time
+  $self: &
+  margin: 0
+  padding: 0
+  display: flex
+  justify-content: space-between
+  flex-direction: row
+  width: 100%
+  grid-column: 1
+  box-sizing: border-box
+  gap: 20px
+
+  &__date-picker, #{$self}__time-picker
+    padding: 0
+    margin: 0
+    outline: none
+    height: $el-height
+    border-radius: $border-radius
+    font-size: 14px
+    padding:
+      left: 10px
+      right: 10px
+    border: $border
+
+.content
+  &__input
+    display: flex
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    outline: none
+    height: $el-height
+    border-radius: $border-radius
+    font-size: 14px
+    padding:
+      left: 10px
+      right: 10px
+    border: $border
+  &__label
+    margin:
+      bottom: 10px
+    font-size: 14px
+    font-weight: 700
+
+.product-options
+  box-sizing: border-box
+  justify-content: flex-start
+  gap: 20px
+  grid-column: 1
+
+.input__container
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  grid-column: 1
+  min-height: 30px
+  min-width: 30px
+  margin-bottom: 10px
+
+.col1
+  grid-column: 1
+
+.wrapper
+  max-width: 100%
+  box-sizing: border-box
+  display: flex
+  flex-direction: row
+  gap: 20px
+
+.select
+  min-width: 250px
+
+.min
+  min-width: 50%
+
+textarea
+  min-height: 80px
+  vertical-align: top

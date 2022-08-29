@@ -1,0 +1,30 @@
+@import variables
+
+.chart
+  grid-row: stats
+  background-color: white
+  box-shadow: $shadow
+  border: $border
+  position: relative
+  border-radius: $border-radius
+  padding-bottom: 20px
+  margin-bottom: 20px
+  &__container
+    margin-top: 10px
+    position: relative
+    box-sizing: border-box
+    width: 99% !important
+    min-height: 80%
+    padding-left: 20px
+    padding-right: 20px
+    height: 250px
+    overflow: hidden
+  &__title
+    border-radius: $border-radius $border-radius 0 0
+    font-size: 14px
+    font-weight: 700
+    height: 46px
+    background-color: $header-bg-color
+    display: flex
+    align-items: center
+    padding-left: 20px

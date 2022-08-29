@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+.products__container {
+  display: grid;
+  grid-template-rows: [header] max-content [list] 1fr;
+  grid-column: 2;
+  grid-row: 2 / 5;
+}
+
+.products__header {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: grid;
+  grid-template-columns: [qtd] 30px [product] 1fr [size] 30px [price] 40px [btn] 20px;
+  column-gap: 20px;
+  grid-row: header;
+  list-style-type: none;
+}
+
+.products__header__text {
+  font-size: 12px;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+
+.products__list {
+  scrollbar-width: none;
+  position: relative;
+  height: 260px;
+  max-height: 260px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dadada;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0;
+  -ms-overflow-style: none;
+}
+
+.products__list::-webkit-scrollbar {
+  display: none;
+}
+
+.products__list__item {
+  font-size: 14px;
+  font-weight: 500;
+  justify-self: start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  grid-row: [list];
+  display: grid;
+  grid-template-columns: [qtd] 30px [product] 1fr [size] 30px [price] 40px [btn] 20px;
+  column-gap: 20px;
+  list-style: none;
+  min-height: 30px;
+  cursor: pointer;
+}
+
+.products__list__item:hover {
+  background-color: rgba(243, 135, 169, 0.1);
+}
+
+.products__list__item:hover:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.products__list__item:hover:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.products__list__remove:hover {
+  color: #f387a9;
+}
+/*# sourceMappingURL=products-list.css.map */
